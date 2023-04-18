@@ -1,0 +1,18 @@
+#these require your customization
+host_code_path:   /c/Users/kraut/Documents/My_Code/pipeline_gen/dags/pipeline/scripts
+host_config_path: /c/Users/kraut/Documents/My_Code/pipeline_gen/dags/pipeline
+host_data_path: /e/mnt
+
+# these shouldn't need customization
+pipeline_image: dockeroperator_deploy_image:latest
+container_config_path: /tmp
+container_code_path: /tmp/scripts
+container_data_path: /mnt/data
+cuda_test: cuda_test.py
+harvest_data: harvest_data.py
+transform_data: transform_data.py
+train_model: train_model.py
+deploy_model: deploy_model.py
+raw_data_file: raw_harvested_data.csv
+transformed_data_file: transformed_data.csv
+pandas_data_save_format: csv
